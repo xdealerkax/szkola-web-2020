@@ -26,7 +26,8 @@ nav a {
 section {
     display: flex;
     /* align-items: stretch; */
-    height: 500px;
+    /* height: 500px; */
+    min-height: 500px;
     /* kierunek układania elementów */
     /* flex-direction: column; */
 }
@@ -37,6 +38,7 @@ aside {
 article {
     width: 700px;
     background: lightcyan;
+    /* overflow: auto; */
 }
 #right-panel {
     width: 150px;

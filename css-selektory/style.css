@@ -1,0 +1,58 @@
+/* KAŻDY SELEKTOR MOŻNA ŁĄCZYĆ Z INNYMI */
+/* np.
+    nav #kontakt {}
+*/
+
+/* selektor znacznika - każdy div */
+div {
+    background: lightblue;
+}
+/* elementy w elementach - każdy li wewnątrz każdego ul*/
+ul li {
+    margin: 10px;
+}
+
+section li {
+    padding: 10px;
+}
+
+/* b bezpośrednio w section */
+section > b {
+    color: yellow;
+}
+/* wspólne formatowanie dla section i article */
+section, article {
+    padding: 10px;
+}
+/* można również tak: */
+/* section {
+    width: 100px;
+}
+article {
+    height: 100px;
+} */
+
+/* formatowanie z użyciem id elementu */
+#naglowek {
+    font-size: 20px;
+}
+
+/* formatowanie za pomocą klas css */
+.f20 {
+    font-size: 24px;
+}
+.p40 {
+    padding: 40px;
+}
+/* pseudoklasy - tutaj element po najechaniu myszą */
+a:hover {
+    background: lightblue;
+}
+/* wybrany element li */
+li:nth-child(2) {
+    background: lightcoral;
+}
+/* pseudoklasa - wszystkie parzyste */
+p:nth-child(even) {
+    background: lightseagreen;
+}

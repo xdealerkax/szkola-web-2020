@@ -1,0 +1,71 @@
+body {
+  background: grey;
+  /* display: flex;
+  justify-content: center; */
+}
+
+main {
+  background: lightblue;
+  width: 1000px;
+  height: 2800px;
+  position: relative;
+}
+main div {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+#a1 {
+  background: lightcoral;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#a2 {
+  background: lightpink;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 10;
+}
+#a3 {
+  background: lightsalmon;
+  /* right: 100px; */
+}
+#a4 {
+  background: lightseagreen;
+  position: absolute;
+  /* top: 150px;
+  left: 150px;
+  z-index: 40; */
+  position: sticky;
+  top: 20px;
+  
+}
+
+nav div, section div {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    position: absolute;
+}
+nav, section {
+    position: relative;
+}
+/* nav {
+    z-index: 20;
+}
+section {
+    z-index: 10
+}
+nav div {
+    background: red;
+    z-index: 50;
+}
+section div {
+    background: lightcoral;
+    top: 50px;
+    left: 50px;
+    z-index: 100;
+} */
+
