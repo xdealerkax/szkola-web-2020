@@ -1,0 +1,48 @@
+body {
+    background: #aaa;
+    display: flex;
+    justify-content: center;
+}
+main {
+    display: grid;
+    grid-template-columns: 150px 700px 150px;
+    grid-template-rows: 150px 500px 150px;
+    grid-template-areas: 
+        "header header header"
+        "aside article rpanel"
+        "footer footer footer";
+}
+header {
+    grid-area: header;
+    background: lightblue;
+}
+nav {
+    display: flex;
+    /* zawijanie wierszy */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+/* każdy a wewnątrz każdego nav */
+nav a {
+    margin: 0 5px;
+    flex-shrink: 10;
+}
+#a4 {
+    flex-shrink: 1;
+}
+aside {
+    grid-area: aside;
+    background: lightcoral;
+}
+article {
+    grid-area: article;    
+    background: lightcyan;
+}
+#right-panel {
+    grid-area: rpanel;
+    background:lightpink;
+}
+footer {
+    grid-area: footer;
+    background: lightseagreen;
+}

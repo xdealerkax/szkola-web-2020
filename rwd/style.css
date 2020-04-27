@@ -1,0 +1,88 @@
+body {
+    background: #aaa;
+}
+main {
+    width: 1000px;
+    margin: 0 auto;
+}
+header {
+    height: 150px;
+    background: lightblue;
+}
+nav {
+    display: flex;
+    /* zawijanie wierszy */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+/* każdy a wewnątrz każdego nav */
+nav a {
+    margin: 0 5px;
+    flex-shrink: 10;
+}
+#a4 {
+    flex-shrink: 1;
+}
+section {
+    display: flex;
+    /* align-items: stretch; */
+    /* height: 500px; */
+    min-height: 500px;
+    /* kierunek układania elementów */
+    /* flex-direction: column; */
+}
+aside {
+    width: 150px;
+    background: lightcoral;
+}
+article {
+    width: 700px;
+    background: lightcyan;
+    /* overflow: auto; */
+}
+#right-panel {
+    width: 150px;
+    background:lightpink;
+}
+footer {
+    height: 150px;
+    background: lightseagreen;
+}
+
+
+@media (max-width: 1200px) {
+
+}
+/* tablety, stare monitory */
+@media (max-width: 1024px) {
+    main {
+        width: 850px;
+    }
+    #right-panel {
+        /* opacity: 0; */
+        /* visibility: hidden; */
+        display: none;
+    }
+}
+/* telefony w poziomie , czasami zwiększamy do 820px*/
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+    #right-panel {
+        /* opacity: 0; */
+        /* visibility: hidden; */
+        display: none;
+    }
+}
+/* telefon w pionie */
+@media (max-width: 500px) {
+    main {
+        width: 100%;
+    }
+    #right-panel {
+        /* opacity: 0; */
+        /* visibility: hidden; */
+        display: none;
+    }
+}
